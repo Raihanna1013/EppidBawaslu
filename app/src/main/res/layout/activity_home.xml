@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/slider"
+            android:layout_width="328dp"
+            android:layout_height="126dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.542"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.092" />
+
+        <ImageButton
+            android:id="@+id/cekStatus"
+            android:layout_width="105dp"
+            android:layout_height="113dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="76dp"
+            android:background="@drawable/cek_permohonan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <ImageButton
+            android:id="@+id/CS"
+            android:layout_width="104dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/costumerservice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formpermohonan" />
+
+        <ImageButton
+            android:id="@+id/SOP"
+            android:layout_width="102dp"
+            android:layout_height="111dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/menu_sop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cekStatus" />
+
+        <ImageButton
+            android:id="@+id/formpermohonan"
+            android:layout_width="106dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/menu_form"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="228dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="28dp"
+            android:text="Alur Permohonan Informasi"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CS" />
+
+        <ImageView
+            android:id="@+id/batas1"
+            android:layout_width="234dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pembatasmerah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/alurpemilu"
+            android:layout_width="301dp"
+            android:layout_height="201dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/alurpemilu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/batas1" />
+
+        <TextView
+            android:id="@id/info"
+            android:layout_width="228dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Informasi Bawaslu"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alurpemilu" />
+
+        <ImageView
+            android:id="@+id/batas2"
+            android:layout_width="234dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pembatasmerah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider"
+            android:layout_width="325dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="12dp"
+            app:iss_error_image="@android:color/white"
+            app:iss_period="1000"
+            app:iss_placeholder="@android:color/white"
+            app:layout_constraintHorizontal_bias="0.36"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/batas2"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@id/publik"
+            android:layout_width="228dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="24dp"
+            android:text="Informasi OPub"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSlider" />
+
+        <ImageView
+            android:id="@+id/batas3"
+            android:layout_width="234dp"
+            android:layout_height="11dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/pembatasmerah"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.129"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/publik" />
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/imageSlider2"
+            android:layout_width="325dp"
+            android:layout_height="136dp"
+            android:layout_marginTop="24dp"
+            app:iss_error_image="@android:color/white"
+            app:iss_period="1000"
+            app:iss_placeholder="@android:color/white"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/batas3"
+            tools:ignore="MissingClass" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
